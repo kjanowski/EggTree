@@ -37,7 +37,7 @@ function displayPerson(id)
 	
 	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"100\" y=\"200\">"
 				+"<rect class=\"card\" x=\"50\" y=\"50\" width=\"300\" height=\"200\"/>"
-				+"<image class=\"portrait\" x=\"100\" y=\"100\" width=\"100\" height=\"100\" xlink=\""+person.image_url+"\"/>"
+				+"<image class=\"portrait\" x=\"100\" y=\"100\" width=\"100\" height=\"100\" xlink:href=\""+person.image_url+"\"/>"
 				+"<text class=\"name\" x=\"50\" y=\"250\">"+nameText+"</text>"
 				+"<text class=\"name\" x=\"50\" y=\"280\">"+hatchedText+"</text>"
 				+"</g>";
