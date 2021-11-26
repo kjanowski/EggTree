@@ -1,0 +1,8 @@
+:root{
+	--generic-font-family: Oregano, sans-serif;
+}
+
+.card{
+	font-family:var(--generic-font-family);
+	color:blue;
+}

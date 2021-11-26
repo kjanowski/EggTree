@@ -25,7 +25,7 @@ function initFamily(jsonData)
 
 function displayPerson(id)
 {
-	var output = document.getElementById("eggTree");
+	var outputSVG = document.getElementById("eggTree");
 	
 	var person = family.people[id];
 	
@@ -35,5 +35,9 @@ function displayPerson(id)
 	
 	outputText += "<br>hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
 	
-	output.innerHTML = outputText;
+	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"100\" y=\"200\">"
+				+"<rect class=\"card\" x=\"50\" y=\"50\" width=\"300\" height=\"200\">"
+				+outputText
+				+"</rect>"
+				+"</g">;
 }

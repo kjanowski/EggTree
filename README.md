@@ -1,10 +1,10 @@
 # About this project
 
-The converters here are part of my worldbuilding project, the Kaleidoscope System.
+This family tree tool is part of my worldbuilding project, the Kaleidoscope System.
 
-Their primary purpose is to allow me to convert dates and times between the calendars that I am developing for my fictional cultures.
+Its primary purpose is to allow me to display family trees for my fictional egg-laying sapients.
 
-If you're interested in the lore behind these calendars, you can find more infomation here:
+If you're interested in the lore behind these families, you can find more infomation here:
 * WorldAnvil: <https://www.worldanvil.com/w/the-kaleidoscope-system-kaleidechse>
 * DeviantArt: <https://www.deviantart.com/kaleidechse/gallery/63178723/kaleidoscope>
 * my personal Website: <https://www.kathrinjanowski.com/en/kaleidoscope>
@@ -12,7 +12,7 @@ If you're interested in the lore behind these calendars, you can find more infom
 
 # License
 
-You are free to adapt the converter logic for your own calendars, or add functionality such as leap years.
+You are free to adapt the family tree code for your own purposes.
 Therefore, I am placing the code under the [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 
