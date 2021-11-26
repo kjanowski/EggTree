@@ -36,9 +36,9 @@ function displayPerson(id)
 	hatchedText= "hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
 	
 	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"300\" y=\"0\">"
-				+"<rect class=\"card\" x=\"300\" y=\"0\" width=\"300\" height=\"200\"/>"
+				+"<rect class=\"card\" x=\"0\" y=\"0\" width=\"300\" height=\"200\"/>"
 				+"<image class=\"portrait\" x=\"10\" y=\"10\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>"
-				+"<text class=\"name\" x=\"250\" y=\"150\">"+nameText+"</text>"
-				+"<text class=\"name\" x=\"250\" y=\"180\">"+hatchedText+"</text>"
+				+"<text class=\"name\" x=\"250\" y=\"50\">"+nameText+"</text>"
+				+"<text class=\"name\" x=\"250\" y=\"80\">"+hatchedText+"</text>"
 				+"</g>";
 }
