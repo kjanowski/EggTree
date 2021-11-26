@@ -1,4 +1,13 @@
 var family=undefined;
+var drawParams = {
+	cardWidth: 500,
+	cardHeight: 300,
+    halfCardWidth: 250,
+    halfCardHeight: 150,	
+	imgSize: 200,
+	lineHeight: 30,
+	cardPadding: 10
+}
 
 
 function loadFamily(familyURL)
@@ -33,14 +42,21 @@ function displayPerson(id)
 	if(person.name.married_clan != undefined)
 		nameText += " "+person.name.married_clan;
 	
-	hatchedText= "hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
+	var hatchedText= "hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
+
 	
-	
+	var posX = person.x - drawParams.halfCardWidth;
+	var posY = person.y - drawParams.halfCardHeight;
+	var topBlocksY = posY + drawParams.cardPadding;
+	var leftBlockX = posX + drawParams.cardPadding;
+	var rightBlockX = posX + drawParams.cardPadding*2 + drawParams.imgSize;
+	var bottomBlockY = posY + drawParams.cardPadding;
+	var bottomBlockX = posX + drawParams.cardPadding;
 	
 	output.innerHTML ="<g id=\"person_"+id+"\">"
-				+"<rect class=\"card\" x=\""+person.x+"\" y=\""+person.y+"\" width=\"500\" height=\"300\"/>"
-				+"<image class=\"portrait\" x=\"10\" y=\"10\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>"
-				+"<text class=\"name\" x=\"250\" y=\"10\">"+nameText+"</text>"
-				+"<text class=\"name\" x=\"250\" y=\"40\">"+hatchedText+"</text>"
+				+"<rect class=\"card\" x=\""+posX+"\" y=\""+posY+"\" width=\"500\" height=\"300\"/>"
+				+"<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>"
+				+"<text class=\"name\" x=\""+rightBlockX+"\" y=\""+topBlocksY+"\">"+nameText+"</text>"
+				+"<text class=\"name\" x=\""+rightBlockX+"\" y=\""+(topBlocksY+drawParams.lineHeight)+"\">"+hatchedText+"</text>"
 				+"</g>";
 }
