@@ -39,5 +39,5 @@ function displayPerson(id)
 				+"<rect class=\"card\" x=\"50\" y=\"50\" width=\"300\" height=\"200\">"
 				+outputText
 				+"</rect>"
-				+"</g">;
+				+"</g>";
 }
