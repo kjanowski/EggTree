@@ -1,6 +1,7 @@
-.card{
-	background:#ffffff;
+rect.card{
+	fill:#ffffff;
 	border:2px solid #cccccc;
 	font-size:18px;
-	color:#000000;
+	stroke:#000000;
+	stroke-width:2;
 }
