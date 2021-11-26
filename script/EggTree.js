@@ -34,6 +34,9 @@ function initFamily(jsonData)
 
 function createPersonSVG(id)
 {
+	var person = family.people[id];
+	
+	
 	var posX = person.x*1 - drawParams.halfCardWidth;
 	var posY = person.y*1 - drawParams.halfCardHeight;
 	var topBlocksY = posY + drawParams.cardPadding;
@@ -42,7 +45,6 @@ function createPersonSVG(id)
 	var bottomBlockY = posY + drawParams.cardPadding;
 	var bottomBlockX = posX + drawParams.cardPadding;
 
-	var person = family.people[id];
 	
 	//begin the group element
 	var svgGroup = "<g id=\"person_"+id+"\">"
