@@ -37,7 +37,7 @@ function displayPerson(id)
 	
 	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"100\" y=\"200\">"
 				+"<rect class=\"card\" x=\"50\" y=\"50\" width=\"300\" height=\"200\">"
-				+outputText
+				+"<text x=\"10\" y=\"10\">"+outputText+"</text>"
 				+"</rect>"
 				+"</g>";
 }

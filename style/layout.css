@@ -1,4 +1,12 @@
-.card{
+rect.card{
 	width:500px;
 	height:300px;
+	fill:#ffffff;
+	stroke:#cccccc;
+	stroke-width:2;
+}
+
+rect.card text{
+	font-size:18px;
+	fill:#000000;
 }
