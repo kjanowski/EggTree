@@ -29,14 +29,15 @@ function displayPerson(id)
 	
 	var person = family.people[id];
 	
-	var outputText = person.name.given+" "+person.name.father+" "+person.name.birth_clan;
+	var nameText = person.name.given+" "+person.name.father+" "+person.name.birth_clan;
 	if(person.name.married_clan != undefined)
-		outputText += " "+person.name.married_clan;
+		nameText += " "+person.name.married_clan;
 	
-	outputText += "<br>hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
+	hatchedText= "hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
 	
 	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"100\" y=\"200\">"
 				+"<rect class=\"card\" x=\"50\" y=\"50\" width=\"300\" height=\"200\"/>"
-				+"<text x=\"100\" y=\"100\">"+outputText+"</text>"
+				+"<text class=\"name\" x=\"100\" y=\"100\">"+nameText+"</text>"
+				+"<text class=\"name\" x=\"100\" y=\"130\">"+hatchedText+"</text>"
 				+"</g>";
 }
