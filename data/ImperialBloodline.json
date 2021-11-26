@@ -1,0 +1,60 @@
+{
+	"culture":"utd",
+	"people":
+	[
+		{
+			"id":"1",
+			"name":
+			{
+				"given":"Nimýron",
+				"father":"cyn Géberos",
+				"birth_clan":"ti Epunda",
+				"married_clan":undefined
+			},
+			"hatch_date":
+			{
+				"year":"287345",
+				"month":"2",
+				"day":"16"
+			},
+			"spouses":
+			[
+				{
+					"id":"2",
+					"wedding_date":
+					{
+						"year":"287373",
+						"month":"2",
+						"day":"1"
+					},
+					"clutches":
+					[
+						{
+							"egg_date":
+							{
+								"year":"287373",
+								"month":"4",
+								"day":"18"
+							},
+							"children":["3", "4"]
+						}
+					]
+				}
+			],
+			"career_events":
+			[
+				{
+					"title":"Phirlen Régnó de Nimýris",
+					"year":"287394",
+					"month":"5",
+					"day":"22"
+				}
+			],
+			"death_date":{
+				"year":"287432",
+				"month":"8",
+				"day":"10"
+			}
+		}
+	]
+}
