@@ -35,10 +35,10 @@ function displayPerson(id)
 	
 	hatchedText= "hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
 	
-	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"100\" y=\"200\">"
+	outputSVG.innerHTML ="<g id=\"person_"+id+"\" x=\"300\" y=\"0\">"
 				+"<rect class=\"card\" x=\"50\" y=\"50\" width=\"300\" height=\"200\"/>"
-				+"<image class=\"portrait\" x=\"100\" y=\"100\" width=\"100\" height=\"100\" xlink:href=\""+person.image_url+"\"/>"
-				+"<text class=\"name\" x=\"50\" y=\"250\">"+nameText+"</text>"
-				+"<text class=\"name\" x=\"50\" y=\"280\">"+hatchedText+"</text>"
+				+"<image class=\"portrait\" x=\"200\" y=\"200\" width=\"100\" height=\"100\" xlink:href=\""+person.image_url+"\"/>"
+				+"<text class=\"name\" x=\"250\" y=\"50\">"+nameText+"</text>"
+				+"<text class=\"name\" x=\"250\" y=\"80\">"+hatchedText+"</text>"
 				+"</g>";
 }
