@@ -47,8 +47,8 @@ function createPersonSVG(id)
 
 	
 	//begin the group element
-	var svgGroup = "<g id=\"person_"+id+"\">"
-				+"<rect class=\"card\" x=\""+posX+"\" y=\""+posY+"\" width=\"500\" height=\"300\"/>";
+	var svgGroup = "<g class=\"card\" id=\"person_"+id+"\">"
+				+"<rect x=\""+posX+"\" y=\""+posY+"\" width=\"500\" height=\"300\"/>";
 
 	//add the portrait
 	svgGroup += "<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>";
