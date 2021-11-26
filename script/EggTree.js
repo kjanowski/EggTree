@@ -38,7 +38,7 @@ function displayPerson(id)
 	
 	
 	output.innerHTML ="<g id=\"person_"+id+"\">"
-				+"<rect class=\"card\" x=\""+person.x"\" y=\""+person.y+"\" width=\"500\" height=\"300\"/>"
+				+"<rect class=\"card\" x=\""+person.x+"\" y=\""+person.y+"\" width=\"500\" height=\"300\"/>"
 				+"<image class=\"portrait\" x=\"10\" y=\"10\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>"
 				+"<text class=\"name\" x=\"250\" y=\"10\">"+nameText+"</text>"
 				+"<text class=\"name\" x=\"250\" y=\"40\">"+hatchedText+"</text>"
