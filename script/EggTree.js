@@ -57,12 +57,12 @@ function createPersonSVG(id)
 	var nameText = person.name.given+" "+person.name.father+" "+person.name.birth_clan;
 	if(person.name.married_clan != undefined)
 		nameText += " "+person.name.married_clan;
-	svgGroup += "<text class=\"name\" x=\""+rightBlockX+"\" y=\""+topBlocksY+"\">"+nameText+"</text>"
+	svgGroup += "<text class=\"name\" x=\""+rightBlockX+"\" y=\""+(topBlocksY+drawParams.lineHeight)+"\">"+nameText+"</text>"
 	
 	
 	//add the hatching date
 	var hatchedText= "hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
-	svgGroup += "<text class=\"name\" x=\""+rightBlockX+"\" y=\""+(topBlocksY+drawParams.lineHeight)+"\">"+hatchedText+"</text>"
+	svgGroup += "<text class=\"name\" x=\""+rightBlockX+"\" y=\""+(topBlocksY+drawParams.lineHeight*2)+"\">"+hatchedText+"</text>"
 				
 	//close the group element
 	svgGroup += "</g>";

@@ -2,7 +2,7 @@
 	--generic-font-family: Oregano, sans-serif;
 }
 
-rect.card text{
+.card text{
 	font-family:var(--generic-font-family);
 	fill:blue;
 }
