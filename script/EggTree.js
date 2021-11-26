@@ -19,6 +19,21 @@ function initFamily(jsonData)
 {
 	family = JSON.parse(jsonData);
 	
+	displayPerson("1");
+}
+
+
+function displayPerson(id)
+{
 	var output = document.getElementById("eggTree");
-	output.innerHTML = ""+family;
+	
+	var person = family.people[id];
+	
+	var outputText = person.name.given+" "+person.name.father+" "+person.name.birth_clan;
+	if(person.name.married_clan != undefined)
+		outputText += " "+person.name.married_clan;
+	
+	outputText += "<br>hatched "+person.hatch_date.year+"/"+person.hatch_date.month+"/"+person.hatch_date.day;
+	
+	output.innerHTML = outputText;
 }

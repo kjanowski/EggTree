@@ -1,9 +1,9 @@
 {
 	"calendar":"utd",
 	"people":
-	[
+	{
+		"1":
 		{
-			"id":"1",
 			"name":
 			{
 				"given":"Nimýron",
@@ -56,5 +56,5 @@
 				"day":"10"
 			}
 		}
-	]
+	}
 }
