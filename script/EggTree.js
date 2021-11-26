@@ -10,7 +10,7 @@ function loadFamily(familyURL)
 			initFamily(this.responseText);
 		}
 	};
-	xmlhttp.open("GET", configURL, true);
+	xmlhttp.open("GET", familyURL, true);
 	xmlhttp.send();
 }
 
