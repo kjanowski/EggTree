@@ -69,7 +69,7 @@ function createPersonSVG(id)
 }	
 
 
-function displayPerson(id)
+function displayPerson(id){
 	//assemble it all
 	var output = document.getElementById("eggTree");
 	output.innerHTML = createPersonSVG(id);
