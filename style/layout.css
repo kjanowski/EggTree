@@ -1,12 +1,6 @@
-rect.card{
-	width:500px;
-	height:300px;
-	fill:#ffffff;
-	stroke:#cccccc;
-	stroke-width:2;
-}
-
-rect.card text{
+.card{
+	background:#ffffff;
+	border:2px solid #cccccc;
 	font-size:18px;
-	fill:#000000;
+	color:#000000;
 }
