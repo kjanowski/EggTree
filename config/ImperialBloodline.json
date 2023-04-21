@@ -1,48 +1,21 @@
 {
 	"calendar":"utd",
 	"people":
-	{
-		"1":
+	[
 		{
-			"x":"300",
-			"y":"200",
+			"id":"i_01"
 			"name":
 			{
 				"given":"Nimýron",
-				"father":"cyn Géberos",
+				"parent_name":"cýn Géberos",
 				"birth_clan":"ti Epunda"
 			},
-			"image_url":"https://www.worldanvil.com/uploads/images/41bc35e20ea30ba1faf4bcb25930b685.webp",
 			"hatch_date":
 			{
 				"year":"287345",
 				"month":"2",
 				"day":"16"
 			},
-			"spouses":
-			[
-				{
-					"id":"2",
-					"wedding_date":
-					{
-						"year":"287373",
-						"month":"2",
-						"day":"1"
-					},
-					"clutches":
-					[
-						{
-							"egg_date":
-							{
-								"year":"287373",
-								"month":"4",
-								"day":"18"
-							},
-							"children":["3", "4"]
-						}
-					]
-				}
-			],
 			"career_events":
 			[
 				{
@@ -56,7 +29,133 @@
 				"year":"287432",
 				"month":"8",
 				"day":"10"
+			},
+			"display":
+			{
+				"x":"300",
+				"y":"200",
+				"image_url": "https://www.worldanvil.com/uploads/images/41bc35e20ea30ba1faf4bcb25930b685.webp"
+			}
+		},
+		{
+			"id":"2"
+			"name":
+			{
+				"given":"Tarinu,
+				"parent_name":"cýn Camiras",
+				"birth_clan":"ti Tépino"
+				"married_name":"tér Epunda"
+			},
+			"hatch_date":
+			{
+				"year":"287347",
+				"month":"7",
+				"day":"3"
+			},
+			"career_events":
+			[
+				{
+					"title":"Phirlen Régna de Nimýris",
+					"year":"287394",
+					"month":"5",
+					"day":"22"
+				}
+			],
+			"death_date":{
+				"year":"287426",
+				"month":"12",
+				"day":"6"
+			},
+			"display":
+			{
+				"x":"600",
+				"y":"200",
+				"image_url": "https://www.worldanvil.com/uploads/images/ac6c0478c974a50e8317fa088de8cc0b.webp"
+			}
+		},
+		{
+			"id":"3"
+			"name":
+			{
+				"given":"Phinéron",
+				"parent_name":"cýn Nimýron",
+				"birth_clan":"ti Epunda"
+			},
+			"hatch_date":
+			{
+				"year":"287373",
+				"month":"9",
+				"day":"15"
+			},
+			"career_events":
+			[
+				{
+					"title":"Cýlen Régno de Nimýris",
+					"year":"287432",
+					"month":"8",
+					"day":"21"
+				}
+			],
+			"death_date":{
+				"year":"287452",
+				"month":"6",
+				"day":"8"
+			},
+			"display":
+			{
+				"x":"300",
+				"y":"400",
+				"image_url": "https://www.worldanvil.com/uploads/images/21f3ee60b9edeb57cc679698782d22fa.webp"
+			}
+		},
+		{
+			"id":"4"
+			"name":
+			{
+				"given":"Pharólia",
+				"parent_name":"cýn Nimýron",
+				"birth_clan":"ti Epunda"
+			},
+			"hatch_date":
+			{
+				"year":"287373",
+				"month":"9",
+				"day":"19"
+			},
+			"career_events":[],
+			"display":
+			{
+				"x":"600",
+				"y":"400",
+				"image_url": "https://www.worldanvil.com/uploads/images/dac28242379ba3bc37b1bbab36f3ee57.webp"
 			}
 		}
-	}
+	],
+	"pairings":
+	[
+		{
+			"id": "p_01",
+			"partners": ["i_01", "i_02"]
+			"wedding_date":
+			{
+				"year":"287373",
+				"month":"2",
+				"day":"1"
+			},
+			"clutches": ["c_01"]
+		}
+	],
+	"clutches":
+	[
+		{
+			"id": "c_01",
+			"egg_date":
+			{
+				"year":"287373",
+				"month":"4",
+				"day":"18"
+			},
+			"children": ["3", "4"]
+		}
+	]
 }
