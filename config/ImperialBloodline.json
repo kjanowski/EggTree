@@ -104,7 +104,7 @@
 			"display":
 			{
 				"x":300,
-				"y":700,
+				"y":500,
 				"image_url": "https://www.worldanvil.com/uploads/images/21f3ee60b9edeb57cc679698782d22fa.webp"
 			}
 		},
@@ -126,7 +126,7 @@
 			"display":
 			{
 				"x":800,
-				"y":700,
+				"y":500,
 				"image_url": "https://www.worldanvil.com/uploads/images/dac28242379ba3bc37b1bbab36f3ee57.webp"
 			}
 		}

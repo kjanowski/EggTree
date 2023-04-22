@@ -44,17 +44,14 @@ function initFamily(jsonData)
 	}
 	
 	for (pairing in family.pairings){
-		svg = createPersonSVG(person);
+		svg = createPairingSVG(pairing);
 		output.innerHTML = output.innerHTML + svg
 	}
 }
 
 
-function createPersonSVG(id)
-{
-	var person = family.people[id];
-	
-	
+function createPersonSVG(person)
+{	
 	var posX = person.display.x - drawParams.person.originX;
 	var posY = person.display.y - drawParams.person.originY;
 	var topBlocksY = posY + drawParams.person.cardPadding;
@@ -65,7 +62,7 @@ function createPersonSVG(id)
 
 	
 	//begin the group element
-	var svgGroup = "<g class=\"card\" id=\"person_"+id+"\">"
+	var svgGroup = "<g class=\"card\" id=\"person_"+person.id+"\">"
 				+"<rect x=\""+posX+"\" y=\""+posY+"\" width=\""+drawParams.person.cardWidth+"\" height=\""+drawParams.person.cardHeight
 				+"\" style=\"fill:"+drawParams.person.fill+";\"/>";
 
@@ -99,10 +96,8 @@ function createPersonSVG(id)
 }	
 
 
-function createPairingSVG(id)
+function createPairingSVG(pairing)
 {
-	var pairing = family.pairing[id];
-	
 	var avgX = 0;
 	var avgY = 0;
 	for (person in pairing.partners){
@@ -123,7 +118,7 @@ function createPairingSVG(id)
 
 	
 	//begin the group element
-	var svgGroup = "<g class=\"card\" id=\"pairing_"+id+"\">"
+	var svgGroup = "<g class=\"card\" id=\"pairing_"+pairing.id+"\">"
 				+"<rect x=\""+posX+"\" y=\""+posY+"\" width=\""+drawParams.pairing.cardWidth+"\" height=\""+drawParams.pairing.cardHeight
 				+"\" style=\"fill:"+drawParams.pairing.fill+";\"/>";
 
