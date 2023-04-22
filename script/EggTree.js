@@ -1,9 +1,9 @@
 var family=undefined;
 var drawParams = {
-	cardWidth: 500,
-	cardHeight: 300,
-    halfCardWidth: 250,
-    halfCardHeight: 150,	
+	cardWidth: 400,
+	cardHeight: 200,
+    halfCardWidth: 200,
+    halfCardHeight: 100,	
 	imgSize: 200,
 	lineHeight: 30,
 	cardPadding: 10
@@ -57,7 +57,7 @@ function createPersonSVG(id)
 				+"<rect x=\""+posX+"\" y=\""+posY+"\" width=\"500\" height=\"300\"/>";
 
 	//add the portrait
-	svgGroup += "<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>";
+	svgGroup += "<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.display.image_url+"\"/>";
 	
 	//add the name
 	var nameText = person.name.given+" "+person.name.parent_name+" "+person.name.birth_clan;
