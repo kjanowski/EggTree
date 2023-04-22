@@ -3,7 +3,7 @@
 	"people":
 	[
 		{
-			"id":"i_01"
+			"id":"i_01",
 			"name":
 			{
 				"given":"Nimýron",
@@ -38,7 +38,7 @@
 			}
 		},
 		{
-			"id":"2"
+			"id":"i_02",
 			"name":
 			{
 				"given":"Tarinu,
@@ -74,7 +74,7 @@
 			}
 		},
 		{
-			"id":"3"
+			"id":"i_03",
 			"name":
 			{
 				"given":"Phinéron",
@@ -109,7 +109,7 @@
 			}
 		},
 		{
-			"id":"4"
+			"id":"i_04",
 			"name":
 			{
 				"given":"Pharólia",
