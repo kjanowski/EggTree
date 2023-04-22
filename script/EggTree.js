@@ -8,6 +8,7 @@ function loadDrawParams(paramsURL)
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			drawParams=JSON.parse(this.responseText);
+			console.log(drawParams)
 		}
 	};
 	xmlhttp.open("GET", paramsURL, true);
@@ -39,13 +40,13 @@ function initFamily(jsonData)
 	output.innerHTML = "" 
 	
 	for (person of family.people){
-		console.log(person)
+		//console.log(person)
 		svg = createPersonSVG(person);
 		output.innerHTML = output.innerHTML + svg
 	}
 	
 	for (pairing of family.pairings){
-		console.log(pairing)
+		//console.log(pairing)
 		svg = createPairingSVG(pairing);
 		output.innerHTML = output.innerHTML + svg
 	}
