@@ -1,13 +1,5 @@
 var family=undefined;
-var drawParams = {
-	cardWidth: 400,
-	cardHeight: 200,
-    halfCardWidth: 200,
-    halfCardHeight: 100,	
-	imgSize: 100,
-	lineHeight: 30,
-	cardPadding: 10
-}
+var drawParams = undefined;
 
 function loadDrawParams(paramsURL)
 {
