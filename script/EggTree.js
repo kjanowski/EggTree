@@ -28,7 +28,13 @@ function initFamily(jsonData)
 {
 	family = JSON.parse(jsonData);
 	
-	displayPerson("1");
+	//clear the container element
+	var output = document.getElementById("eggTree");
+	output = "" 
+	for (person in family.people){
+		svg = createPersonSVG(person);
+		output = output + svg
+	}
 }
 
 
@@ -37,8 +43,8 @@ function createPersonSVG(id)
 	var person = family.people[id];
 	
 	
-	var posX = person.x*1 - drawParams.halfCardWidth;
-	var posY = person.y*1 - drawParams.halfCardHeight;
+	var posX = person.display.x*1 - drawParams.halfCardWidth;
+	var posY = person.display.y*1 - drawParams.halfCardHeight;
 	var topBlocksY = posY + drawParams.cardPadding;
 	var leftBlockX = posX + drawParams.cardPadding;
 	var rightBlockX = posX + drawParams.cardPadding*2 + drawParams.imgSize;
@@ -54,7 +60,7 @@ function createPersonSVG(id)
 	svgGroup += "<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>";
 	
 	//add the name
-	var nameText = person.name.given+" "+person.name.father+" "+person.name.birth_clan;
+	var nameText = person.name.given+" "+person.name.parent_name+" "+person.name.birth_clan;
 	if(person.name.married_clan != undefined)
 		nameText += " "+person.name.married_clan;
 	svgGroup += "<text class=\"name\" x=\""+rightBlockX+"\" y=\""+(topBlocksY+drawParams.lineHeight)+"\">"+nameText+"</text>"
@@ -69,10 +75,3 @@ function createPersonSVG(id)
 
 	return svgGroup;
 }	
-
-
-function displayPerson(id){
-	//assemble it all
-	var output = document.getElementById("eggTree");
-	output.innerHTML = createPersonSVG(id);
-}
