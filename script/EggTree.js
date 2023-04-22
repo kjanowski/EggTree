@@ -103,9 +103,9 @@ function createPairingSVG(pairing)
 {
 	var avgX = 0;
 	var avgY = 0;
-	for (person in pairing.partners){
-		avgX = avgX+(person.display.x*1);
-		avgY = avgY+(person.display.y*1);
+	for (person of pairing.partners){
+		avgX = avgX+person.display.x;
+		avgY = avgY+person.display.y;
 	}
 	avgX = avgX/pairing.persons.length;
 	avgY = avgY/pairing.persons.length;
