@@ -135,8 +135,8 @@
 	[
 		{
 			"id": "p_01",
-			"partners": ["i_01", "i_02"]
-			"wedding_date":
+			"partners": ["i_01", "i_02"],
+			"start_date":
 			{
 				"year":"287373",
 				"month":"2",
