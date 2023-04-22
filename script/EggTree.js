@@ -44,7 +44,7 @@ function initFamily(jsonData)
 	}
 	
 	for (pairing in family.pairings){
-		svg = createPersonSVG(person);
+		svg = createPairingSVG(pairing);
 		output.innerHTML = output.innerHTML + svg
 	}
 }

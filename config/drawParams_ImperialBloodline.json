@@ -2,7 +2,7 @@
 	"person":
 	{
 		"cardWidth": 400,
-		"cardHeight": 200,
+		"cardHeight": 150,
 		"originX": 200,
 		"originY": 100,	
 		"imgSize": 100,
