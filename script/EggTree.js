@@ -30,10 +30,10 @@ function initFamily(jsonData)
 	
 	//clear the container element
 	var output = document.getElementById("eggTree");
-	output = "" 
+	output.innerHTML = "" 
 	for (person in family.people){
 		svg = createPersonSVG(person);
-		output = output + svg
+		output.innerHTML = output.innerHTML + svg
 	}
 }
 
