@@ -68,7 +68,7 @@
 			},
 			"display":
 			{
-				"x":"600",
+				"x":"800",
 				"y":"200",
 				"image_url": "https://www.worldanvil.com/uploads/images/ac6c0478c974a50e8317fa088de8cc0b.webp"
 			}
@@ -104,7 +104,7 @@
 			"display":
 			{
 				"x":"300",
-				"y":"400",
+				"y":"700",
 				"image_url": "https://www.worldanvil.com/uploads/images/21f3ee60b9edeb57cc679698782d22fa.webp"
 			}
 		},
@@ -125,8 +125,8 @@
 			"career_events":[],
 			"display":
 			{
-				"x":"600",
-				"y":"400",
+				"x":"800",
+				"y":"700",
 				"image_url": "https://www.worldanvil.com/uploads/images/dac28242379ba3bc37b1bbab36f3ee57.webp"
 			}
 		}

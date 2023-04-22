@@ -57,7 +57,7 @@ function createPersonSVG(id)
 				+"<rect x=\""+posX+"\" y=\""+posY+"\" width=\"500\" height=\"300\"/>";
 
 	//add the portrait
-	svgGroup += "<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.image_url+"\"/>";
+	svgGroup += "<image class=\"portrait\" x=\""+leftBlockX+"\" y=\""+topBlocksY+"\" width=\"200\" height=\"200\" xlink:href=\""+person.display.image_url+"\"/>";
 	
 	//add the name
 	var nameText = person.name.given+" "+person.name.parent_name+" "+person.name.birth_clan;
