@@ -38,13 +38,13 @@ function initFamily(jsonData)
 	var output = document.getElementById("eggTree");
 	output.innerHTML = "" 
 	
-	for (person in family.people){
+	for (person of family.people){
 		console.log(person)
 		svg = createPersonSVG(person);
 		output.innerHTML = output.innerHTML + svg
 	}
 	
-	for (pairing in family.pairings){
+	for (pairing of family.pairings){
 		console.log(pairing)
 		svg = createPairingSVG(pairing);
 		output.innerHTML = output.innerHTML + svg
