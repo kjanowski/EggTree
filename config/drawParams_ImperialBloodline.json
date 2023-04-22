@@ -1,24 +1,24 @@
 {
 	"person":
 	{
-		"cardWidth": "400",
-		"cardHeight": "200",
-		"originX": "200",
-		"originY": "100",	
-		"imgSize": "100",
-		"lineHeight": "30",
-		"cardPadding": "10",
-		"fill": "#8888ff"
+		"cardWidth": 400,
+		"cardHeight": 200,
+		"originX": 200,
+		"originY": 100,	
+		"imgSize": 100,
+		"lineHeight": 30,
+		"cardPadding": 10,
+		"fill": "#aaaaff"
 	},
 	"pairing":
 	{
-		"cardWidth": "200",
-		"cardHeight": "100",
-		"originX": "100",
-		"originY": "50",	
-		"imgSize": "80",
-		"lineHeight": "30",
-		"cardPadding": "10",
-		"fill": "#aaaaff"
+		"cardWidth": 200,
+		"cardHeight": 100,
+		"originX": 100,
+		"originY": 50,	
+		"imgSize": 80,
+		"lineHeight": 30,
+		"cardPadding": 10,
+		"fill": "#ccccff"
 	}
 }

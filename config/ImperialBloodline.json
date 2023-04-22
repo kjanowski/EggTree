@@ -20,20 +20,20 @@
 			[
 				{
 					"title":"Phirlen Régnó de Nimýris",
-					"year":"287394",
-					"month":"5",
-					"day":"22"
+					"year":287394,
+					"month":5,
+					"day":22
 				}
 			],
 			"death_date":{
-				"year":"287432",
-				"month":"8",
-				"day":"10"
+				"year":287432,
+				"month":8,
+				"day":10
 			},
 			"display":
 			{
-				"x":"300",
-				"y":"200",
+				"x":300,
+				"y":200,
 				"image_url": "https://www.worldanvil.com/uploads/images/41bc35e20ea30ba1faf4bcb25930b685.webp"
 			}
 		},
@@ -48,28 +48,28 @@
 			},
 			"hatch_date":
 			{
-				"year":"287347",
-				"month":"7",
-				"day":"3"
+				"year":287347,
+				"month":7,
+				"day":3
 			},
 			"career_events":
 			[
 				{
 					"title":"Phirlen Régna de Nimýris",
-					"year":"287394",
-					"month":"5",
-					"day":"22"
+					"year":287394,
+					"month":5,
+					"day":22
 				}
 			],
 			"death_date":{
-				"year":"287426",
-				"month":"12",
-				"day":"6"
+				"year":287426,
+				"month":12,
+				"day":6
 			},
 			"display":
 			{
-				"x":"800",
-				"y":"200",
+				"x":800,
+				"y":200,
 				"image_url": "https://www.worldanvil.com/uploads/images/ac6c0478c974a50e8317fa088de8cc0b.webp"
 			}
 		},
@@ -83,28 +83,28 @@
 			},
 			"hatch_date":
 			{
-				"year":"287373",
-				"month":"9",
-				"day":"15"
+				"year":287373,
+				"month":9,
+				"day":15
 			},
 			"career_events":
 			[
 				{
 					"title":"Cýlen Régno de Nimýris",
-					"year":"287432",
-					"month":"8",
-					"day":"21"
+					"year":287432,
+					"month":8,
+					"day":21
 				}
 			],
 			"death_date":{
-				"year":"287452",
-				"month":"6",
-				"day":"8"
+				"year":287452,
+				"month":6,
+				"day":8
 			},
 			"display":
 			{
-				"x":"300",
-				"y":"700",
+				"x":300,
+				"y":700,
 				"image_url": "https://www.worldanvil.com/uploads/images/21f3ee60b9edeb57cc679698782d22fa.webp"
 			}
 		},
@@ -118,15 +118,15 @@
 			},
 			"hatch_date":
 			{
-				"year":"287373",
-				"month":"9",
-				"day":"19"
+				"year":287373,
+				"month":9,
+				"day":19
 			},
 			"career_events":[],
 			"display":
 			{
-				"x":"800",
-				"y":"700",
+				"x":800,
+				"y":700,
 				"image_url": "https://www.worldanvil.com/uploads/images/dac28242379ba3bc37b1bbab36f3ee57.webp"
 			}
 		}
@@ -138,14 +138,14 @@
 			"partners": ["i_01", "i_02"],
 			"start_date":
 			{
-				"year":"287373",
-				"month":"2",
-				"day":"1"
+				"year":287373,
+				"month":2,
+				"day":1
 			},
 			"end_date":{
-				"year":"287426",
-				"month":"12",
-				"day":"6"
+				"year":287426,
+				"month":12,
+				"day":6
 			},
 			"clutches": ["c_01"]
 		}
@@ -156,11 +156,11 @@
 			"id": "c_01",
 			"egg_date":
 			{
-				"year":"287373",
-				"month":"4",
-				"day":"18"
+				"year":287373,
+				"month":4,
+				"day":18
 			},
-			"children": ["3", "4"]
+			"children": ["i_03", "i_04"]
 		}
 	]
 }

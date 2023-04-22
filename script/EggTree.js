@@ -55,13 +55,13 @@ function createPersonSVG(id)
 	var person = family.people[id];
 	
 	
-	var posX = person.display.x*1 - drawParams.person.originX;
-	var posY = person.display.y*1 - drawParams.person.originY;
-	var topBlocksY = posY + drawParams.person.cardPadding*1;
-	var leftBlockX = posX + drawParams.person.cardPadding*1;
+	var posX = person.display.x - drawParams.person.originX;
+	var posY = person.display.y - drawParams.person.originY;
+	var topBlocksY = posY + drawParams.person.cardPadding;
+	var leftBlockX = posX + drawParams.person.cardPadding;
 	var rightBlockX = posX + drawParams.person.cardPadding*2 + drawParams.person.imgSize*1;
-	var bottomBlockY = posY + drawParams.person.cardPadding*1;
-	var bottomBlockX = posX + drawParams.person.cardPadding*1;
+	var bottomBlockY = posY + drawParams.person.cardPadding;
+	var bottomBlockX = posX + drawParams.person.cardPadding;
 
 	
 	//begin the group element
