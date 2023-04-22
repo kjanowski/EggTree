@@ -39,11 +39,13 @@ function initFamily(jsonData)
 	output.innerHTML = "" 
 	
 	for (person in family.people){
+		console.log(person)
 		svg = createPersonSVG(person);
 		output.innerHTML = output.innerHTML + svg
 	}
 	
 	for (pairing in family.pairings){
+		console.log(pairing)
 		svg = createPairingSVG(pairing);
 		output.innerHTML = output.innerHTML + svg
 	}
